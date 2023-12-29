@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.datetime-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.datetime {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #555;
+}
+
+/* body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  justify-items: auto;
+}
+.task-table {
+  border-collapse: collapse;
+  width: 50%;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.task-table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+.form {
+  width: 50%; 
+  margin: auto; 
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+
+#task {
+  width: 150%;
+}
+#submit-btn {
+  width: 50%;
+}
+
+ */

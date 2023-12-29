@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Tasks Master</h1>
+<div class="content">
+    <br>
+    {% if tasks|length < 1 %} <h4>Currently there are no Tasks. Please Create Tasks below</h4>
+
+        {% else %}
+
+
+        <table class="task-table">
+            <tr>
+                <th>Tasks</th>
+                <th>Date created</th>
+                <th>Actions</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{task.task}}</td>
+                <td> {{task.date.strftime('%Y-%m-%d %H:%M:%S')}}</td>
+                <td>
+                    <a href="/delete/{{task.id}}">Delete</a>
+                    <br>
+                    <a href="/update/{{task.id}}">Update</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div>
+            <br>
+            <br><br>
+        </div>
+        {% endif %}
+
+        <form action="/" method="post" class="form">
+            <input type="text" name="task" id="task" placeholder="Enter task">
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+
+</div>
+{% endblock %}
